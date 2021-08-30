@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:learn_words_with_pictures_for_kids/animals.dart';
 import 'package:learn_words_with_pictures_for_kids/birds.dart';
 import 'package:learn_words_with_pictures_for_kids/colors.dart';
+import 'package:learn_words_with_pictures_for_kids/drawer.dart';
 import 'package:learn_words_with_pictures_for_kids/fruites.dart';
 import 'package:learn_words_with_pictures_for_kids/shapes.dart';
 import 'package:learn_words_with_pictures_for_kids/veg.dart';
@@ -22,13 +23,14 @@ class Dashboard extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
-        backgroundColor: Colors.cyan[900],
+        backgroundColor: Colors.amber[900],
         title: const Text('Dashboard'),
         // automaticallyImplyLeading: true,
         // leading: IconButton(icon:Icon(Icons.arrow_back),
         // onPressed:() => Navigator.pop(context, MaterialPageRoute(builder: (context) => MainScreen()),),
         // ),
       ),
+      drawer: MyDrawer(),
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.all(16.0),
@@ -147,7 +149,7 @@ class Dashboard extends StatelessWidget {
                             maxWidth: 60,
                             maxHeight: 60,
                           ),
-                          child: Image.asset('images/apple1.png',
+                          child: Image.asset('images/rainbow.png',
                               fit: BoxFit.cover),
                         ),
                         // Icon(

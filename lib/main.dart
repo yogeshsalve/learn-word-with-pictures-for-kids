@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
     ]);
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: "TOP INTERVIEW QUESTIONS",
+      title: "LEARN WORDS WITH PICTURES",
       home: SplashScreen(),
     );
   }
