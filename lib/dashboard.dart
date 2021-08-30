@@ -1,5 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:learn_words_with_pictures_for_kids/animals.dart';
+import 'package:learn_words_with_pictures_for_kids/birds.dart';
+import 'package:learn_words_with_pictures_for_kids/colors.dart';
 import 'package:learn_words_with_pictures_for_kids/fruites.dart';
+import 'package:learn_words_with_pictures_for_kids/shapes.dart';
+import 'package:learn_words_with_pictures_for_kids/veg.dart';
+import 'package:learn_words_with_pictures_for_kids/vehicles.dart';
 
 class Dashboard extends StatelessWidget {
   // final List dummyList = List.generate(1000, (index) {
@@ -59,7 +65,7 @@ class Dashboard extends StatelessWidget {
                           'FRUITS',
                           style: TextStyle(
                               color: Colors.black, fontWeight: FontWeight.bold),
-                          textScaleFactor: 2.6,
+                          textScaleFactor: 2.2,
                         ),
 
                         selected: true,
@@ -77,8 +83,8 @@ class Dashboard extends StatelessWidget {
               ),
               InkWell(
                 onTap: () {
-                  // Navigator.of(context).pushReplacement(MaterialPageRoute(
-                  //     builder: (BuildContext context) => HrCategories()));
+                  Navigator.of(context).pushReplacement(MaterialPageRoute(
+                      builder: (BuildContext context) => Veg()));
                 },
                 child: Padding(
                   padding: const EdgeInsets.all(5.0),
@@ -103,10 +109,10 @@ class Dashboard extends StatelessWidget {
                         //   size: 40.0,
                         // ),
                         title: Text(
-                          'VEGETABLES',
+                          'VEGETABLE',
                           style: TextStyle(
                               color: Colors.black, fontWeight: FontWeight.bold),
-                          textScaleFactor: 2.6,
+                          textScaleFactor: 2.2,
                         ),
 
                         selected: true,
@@ -124,8 +130,8 @@ class Dashboard extends StatelessWidget {
               ),
               InkWell(
                 onTap: () {
-                  // Navigator.of(context).pushReplacement(MaterialPageRoute(
-                  //     builder: (BuildContext context) => HrCategories()));
+                  Navigator.of(context).pushReplacement(MaterialPageRoute(
+                      builder: (BuildContext context) => Colorss()));
                 },
                 child: Padding(
                   padding: const EdgeInsets.all(5.0),
@@ -153,7 +159,7 @@ class Dashboard extends StatelessWidget {
                           'COLORS',
                           style: TextStyle(
                               color: Colors.black, fontWeight: FontWeight.bold),
-                          textScaleFactor: 2.6,
+                          textScaleFactor: 2.2,
                         ),
 
                         selected: true,
@@ -171,8 +177,8 @@ class Dashboard extends StatelessWidget {
               ),
               InkWell(
                 onTap: () {
-                  // Navigator.of(context).pushReplacement(MaterialPageRoute(
-                  //     builder: (BuildContext context) => HrCategories()));
+                  Navigator.of(context).pushReplacement(MaterialPageRoute(
+                      builder: (BuildContext context) => Shapes()));
                 },
                 child: Padding(
                   padding: const EdgeInsets.all(5.0),
@@ -200,7 +206,7 @@ class Dashboard extends StatelessWidget {
                           'SHAPES',
                           style: TextStyle(
                               color: Colors.black, fontWeight: FontWeight.bold),
-                          textScaleFactor: 2.6,
+                          textScaleFactor: 2.2,
                         ),
 
                         selected: true,
@@ -218,8 +224,8 @@ class Dashboard extends StatelessWidget {
               ),
               InkWell(
                 onTap: () {
-                  // Navigator.of(context).pushReplacement(MaterialPageRoute(
-                  //     builder: (BuildContext context) => HrCategories()));
+                  Navigator.of(context).pushReplacement(MaterialPageRoute(
+                      builder: (BuildContext context) => Animals()));
                 },
                 child: Padding(
                   padding: const EdgeInsets.all(5.0),
@@ -235,8 +241,8 @@ class Dashboard extends StatelessWidget {
                             maxWidth: 60,
                             maxHeight: 60,
                           ),
-                          child: Image.asset('images/animal.png',
-                              fit: BoxFit.cover),
+                          child:
+                              Image.asset('images/ox.png', fit: BoxFit.cover),
                         ),
                         // Icon(
                         //   Icons.person,
@@ -247,7 +253,7 @@ class Dashboard extends StatelessWidget {
                           'ANIMALS',
                           style: TextStyle(
                               color: Colors.black, fontWeight: FontWeight.bold),
-                          textScaleFactor: 2.6,
+                          textScaleFactor: 2.2,
                         ),
 
                         selected: true,
@@ -265,8 +271,8 @@ class Dashboard extends StatelessWidget {
               ),
               InkWell(
                 onTap: () {
-                  // Navigator.of(context).pushReplacement(MaterialPageRoute(
-                  //     builder: (BuildContext context) => HrCategories()));
+                  Navigator.of(context).pushReplacement(MaterialPageRoute(
+                      builder: (BuildContext context) => Birds()));
                 },
                 child: Padding(
                   padding: const EdgeInsets.all(5.0),
@@ -294,7 +300,7 @@ class Dashboard extends StatelessWidget {
                           'BIRDS',
                           style: TextStyle(
                               color: Colors.black, fontWeight: FontWeight.bold),
-                          textScaleFactor: 2.6,
+                          textScaleFactor: 2.2,
                         ),
 
                         selected: true,
@@ -312,8 +318,8 @@ class Dashboard extends StatelessWidget {
               ),
               InkWell(
                 onTap: () {
-                  // Navigator.of(context).pushReplacement(MaterialPageRoute(
-                  //     builder: (BuildContext context) => HrCategories()));
+                  Navigator.of(context).pushReplacement(MaterialPageRoute(
+                      builder: (BuildContext context) => Vehicles()));
                 },
                 child: Padding(
                   padding: const EdgeInsets.all(5.0),
@@ -341,7 +347,7 @@ class Dashboard extends StatelessWidget {
                           'VEHICLES',
                           style: TextStyle(
                               color: Colors.black, fontWeight: FontWeight.bold),
-                          textScaleFactor: 2.6,
+                          textScaleFactor: 2.2,
                         ),
 
                         selected: true,

@@ -15,7 +15,7 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     super.initState();
     // getUserName();
-    Timer(Duration(seconds: 5), () {
+    Timer(Duration(seconds: 1), () {
       Navigator.of(context).pushReplacement(
           MaterialPageRoute(builder: (BuildContext context) => Dashboard()));
     });
@@ -38,7 +38,7 @@ class _SplashScreenState extends State<SplashScreen> {
               // ),
               Container(
                 margin: EdgeInsets.all(10),
-                width: size.width * 0.8,
+                width: size.width * 1.5,
                 height: size.height * 0.5,
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,
