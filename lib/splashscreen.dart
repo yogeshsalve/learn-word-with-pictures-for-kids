@@ -15,7 +15,7 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     super.initState();
     // getUserName();
-    Timer(Duration(seconds: 1), () {
+    Timer(Duration(seconds: 5), () {
       Navigator.of(context).pushReplacement(
           MaterialPageRoute(builder: (BuildContext context) => Dashboard()));
     });
@@ -38,15 +38,20 @@ class _SplashScreenState extends State<SplashScreen> {
               // ),
               Container(
                 margin: EdgeInsets.all(10),
-                width: size.width * 1.5,
-                height: size.height * 0.5,
+                width: size.width * 0.8,
+                height: size.width * 0.8,
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,
                   image: DecorationImage(
                       image: AssetImage('images/algo1.png'), fit: BoxFit.fill),
                 ),
               ),
-
+              Container(
+                child: Text(
+                  "Hey Adhira, This is for you",
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                ),
+              ),
               SizedBox(height: size.height * 0.05),
               CircularProgressIndicator(
                 valueColor: AlwaysStoppedAnimation<Color>(Colors.blue),
